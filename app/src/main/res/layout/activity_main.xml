@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondopizza"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="207dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/edtnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese su nombre"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/holo_red_light"
+        android:textColorHint="@android:color/holo_red_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.239" />
+
+    <CheckBox
+        android:id="@+id/chhongos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hongos $1"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.745" />
+
+    <TextView
+        android:id="@+id/txttamaño3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extras"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.598" />
+
+    <TextView
+        android:id="@+id/txttamaño2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tamaño "
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.309" />
+
+    <CheckBox
+        android:id="@+id/chcarne"
+        android:layout_width="101dp"
+        android:layout_height="49dp"
+        android:text="Carne $1"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
+
+    <RadioGroup
+        android:layout_width="167dp"
+        android:layout_height="164dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.811">
+
+        <RadioButton
+            android:id="@+id/rbpalitroques"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="Palitroques $1"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbcoca"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Coca Cola 1.5L $1"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbpalicoca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coca / Palitroques $2"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbnada"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="Ningun Extra"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtingreextra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingredientes extras"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.598" />
+
+    <RadioGroup
+        android:layout_width="157dp"
+        android:layout_height="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.442">
+
+        <RadioButton
+            android:id="@+id/rbpepe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pepperoni"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbjamon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jamon"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbqueso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Queso"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtingre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingredientes"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.309" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="172dp"
+        android:layout_height="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.442">
+
+        <RadioButton
+            android:id="@+id/rbpersonal"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:text="Personal $4"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rb8porciones"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:text="8 porciones $6"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rb12porciones"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:text="12 porciones $8"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chpiña"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:text="Piña $1"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.816" />
+
+    <ImageButton
+        android:id="@+id/btnhornear"
+        android:layout_width="157dp"
+        android:layout_height="86dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
+        app:srcCompat="@drawable/boton" />
+
+    <ImageButton
+        android:id="@+id/btnlimpiar"
+        android:layout_width="157dp"
+        android:layout_height="86dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.967"
+        app:srcCompat="@drawable/limpiar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
