@@ -70,21 +70,6 @@ private RadioButton personal;
         limpiar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               /*personal.setChecked(false);
-               ochopor.setChecked(false);
-               docepor.setChecked(false);
-               pepero.setChecked(false);
-               jamon.setChecked(false);
-               queso.setChecked(false);
-               pali.setChecked(false);
-               coquita.setChecked(false);
-               palicoca.setChecked(false);
-               nada.setChecked(false);
-               carne.setChecked(false);
-               hongos.setChecked(false);
-               piña.setChecked(false);
-               nombre.setText("");
-               precio = 0;*/
                 Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
                 finish();
